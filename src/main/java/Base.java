@@ -16,17 +16,21 @@ public class Base {
         System.out.println("Second Digit");
         float second = in.nextFloat();
         //Ввод второго после подсказки
-        System.out.println("Operation: +,-,*,/");
-        String oper = in.nextLine();
+        System.out.println("Operation: + - * /");
+        String oper = in.next();
+        //in.nextLine() работает некорректно, спасибо Stackoverflow
         //Ввод действия
         if (oper.equals("+")) {
-            float result = first + second;
-            System.out.println("Addition ");
+             float result = first + second;
+             System.out.println("Addition ");
+             System.out.printf("%+.4f", result);
+             //Считаем сумму
+         }
+         if (oper.equals("-")) {
+            float result = first - second;
+            System.out.println("Difference ");
             System.out.printf("%+.4f", result);
+            //Считаем разность
         }
-        //Считаем
-        System.out.println("Summa");
- //       System.out.printf("%+.4f", result);
-        //Вывод
-    }
+      }
 }
