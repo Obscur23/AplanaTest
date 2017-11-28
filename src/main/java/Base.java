@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * @author Anton U.
- * Складываем два числа, выводим результат
+ * Калькулятор - 4 действия без проверок ввода
  */
 public class Base {
     public static void main(String[] args) {
@@ -18,8 +18,8 @@ public class Base {
         //Ввод второго после подсказки
         System.out.println("Operation: + - * /");
         String oper = in.next();
-        //in.nextLine() работает некорректно, спасибо Stackoverflow
         //Ввод действия
+        //in.nextLine() работает некорректно, 10х Stackoverflow
         if (oper.equals("+")) {
              float result = first + second;
              System.out.println("Addition ");
@@ -31,6 +31,18 @@ public class Base {
             System.out.println("Difference ");
             System.out.printf("%+.4f", result);
             //Считаем разность
+        }
+        if (oper.equals("*")) {
+            float result = first * second;
+            System.out.print("Multiplication ");
+            System.out.printf("%+.4f", result);
+            //Считаем умножение
+        }
+        if (oper.equals("/")) {
+            float result = first * second;
+            System.out.print("Division ");
+            System.out.printf("%+.4f", result);
+            //Считаем деление
         }
       }
 }
