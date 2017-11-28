@@ -39,9 +39,9 @@ public class Base {
             //Считаем умножение
         }
         if (oper.equals("/")) {
-            float result = first * second;
+            float result = first / second;
             System.out.print("Division ");
-            System.out.printf("%+.4f", result);
+            System.out.printf("%.4f", result);
             //Считаем деление
         }
       }
