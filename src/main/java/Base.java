@@ -8,8 +8,8 @@ public class Base {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         //Инициализируем сканер
-        boolean cycle = true;
-        while (cycle = true){
+        boolean cycle = false;
+ //       while (cycle = true){
             System.out.println("First Digit");
             float first = in.nextFloat();
             //Ввод первого после подсказки
@@ -51,7 +51,11 @@ public class Base {
                 cycle = false;
              //Инверсия сравнения, 10х Stackoverflow
                 System.out.println(cycle);
+             //Вывод переменной цикла, для отладки
             }
+ //           }
+        System.out.println("Bye!");
         }
+
       }
-}
+
